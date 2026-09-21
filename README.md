@@ -51,6 +51,21 @@ The kb source retains **GPL-3.0-or-later**; [LICENSE](LICENSE) contains GPLv3.
 AI assistants contributed implementation, tests and documentation under human direction.
 This is not an independent professional audit or a provider endorsement.
 
+## Contributors and release responsibility
+
+According to Austin Simpkins, Chandler Lee Middlebrooks performed most of
+ChronoRealm's early mathematical work and coded its initial framework. Austin
+recalls the main early development period ending approximately August 8-12,
+around the version 17b freeze. The exact date and its relationship to that freeze
+remain unverified. Chandler contributed on a few occasions afterward; Austin
+expects his involvement to increase. Future participation is an expectation,
+not a completed contribution.
+
+Austin Simpkins leads release coordination and publication, under the arrangement
+he reports discussing with Chandler. This task responsibility does not change
+the stated 50/50 project ownership. Early framework credit does not imply
+authorship of every later implementation or of all code in this kb component.
+
 ## Reporting issues
 
 Include the commit ID, Python/SQLite versions, command, expected result and actual result.

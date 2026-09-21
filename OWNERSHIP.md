@@ -31,3 +31,12 @@ asset-scope, effective-date or departure terms. Those details remain unspecified
 this screenshot. It is not evidence of a new software-license selection.
 
 The private screenshot is not included in this repository.
+
+## Release responsibility clarification
+
+Austin reports that he and Chandler discussed and agreed that Austin will lead
+release coordination and publication. This clarifies operational responsibility;
+it does not alter their stated equal ownership or independently authorize changes
+to ownership or licensing terms. Chandler's contributions continued on a few
+occasions after his main early framework-development period. Austin expects
+further involvement; no future contribution is represented as already completed.

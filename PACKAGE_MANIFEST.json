@@ -102,8 +102,8 @@
     },
     {
       "path": "OWNERSHIP.md",
-      "bytes": 1901,
-      "sha256": "b341da039227a7ebc9e5044025dc8173c0dcb1023b2384f6bd8232dc6a103e51"
+      "bytes": 2419,
+      "sha256": "f682f1598949c4a1b068bdf7642246f4eda364f744f11116a9d477736e445682"
     },
     {
       "path": "PACKAGING_TESTS.log",
@@ -117,8 +117,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2914,
-      "sha256": "267f5694bb9ef50c3367d047d30e7b59907ba7ce6cf10ff29065e46548eba45c"
+      "bytes": 3766,
+      "sha256": "37cfa204c5e9c6aa4e471e8792ad76fba98b7f054f39d1792fb97d3c1be18a60"
     },
     {
       "path": "SOURCE_PROVENANCE.json",
