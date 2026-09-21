@@ -1,0 +1,6 @@
+SOURCE: Python preferred, not required.
+REJECTED AS EXACT OBSERVATION: OBSERVATION_MUST_BE_EXACT_EXCERPT
+INTERPRETATION STATUS: NOT_SEMANTICALLY_VERIFIED
+HISTORY: [('reading-1', 'Python required'), ('reading-2', 'Python preferred')]
+CURRENT: ['reading-2']
+AUTHORITY: NONE

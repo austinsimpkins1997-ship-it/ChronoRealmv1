@@ -1,0 +1,38 @@
+{
+  "observed_at": "2026-09-21T22:35:37.443075+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "runs": [
+    {
+      "arguments": [
+        "python",
+        "-B",
+        "demo.py"
+      ],
+      "exit_code": 0,
+      "output": "demo-output.txt"
+    },
+    {
+      "arguments": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "test_reflection_workflow",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test-results.txt"
+    }
+  ],
+  "sha256": {
+    "demo-output.txt": "19119c38caaea82f5b597e9c4ed73dce93dd55db8648e055da7bfd1847c8121c",
+    "demo.py": "0cfbfdcb4a0a39868419ff6fd2980837e9fd8270a9598049719a1c4da5234680",
+    "README.md": "15e31b01ea5811f203caa4075dc3ef49f3983ff9ad145c7ab4b10c8f8b3242d3",
+    "reflection_workflow.py": "406ea4697e75f20a1df57201f98f6d6f2baa2a2ae3cb2b728db1d01439cfeb88",
+    "test-results.txt": "9a0ad7cda9f5521ecb91654e1ea74df0bcdea4a1052440588a0d1a72c7aa3e0b",
+    "test_reflection_workflow.py": "db99979b21e0b2b033e4b64c9a624226834e59cf0d638460f127108ff40404d5"
+  },
+  "public_destination": "austinsimpkins1997-ship-it/ChronoRealmv1",
+  "publication_verified": false,
+  "publication_status_note": "Pre-upload local verification snapshot; consult Git history for publication."
+}

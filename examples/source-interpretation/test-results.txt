@@ -1,0 +1,19 @@
+test_correction_preserves_history_and_old_snapshot (test_reflection_workflow.ReflectionTests.test_correction_preserves_history_and_old_snapshot) ... ok
+test_correction_requires_reason (test_reflection_workflow.ReflectionTests.test_correction_requires_reason) ... ok
+test_cross_source_correction_refused (test_reflection_workflow.ReflectionTests.test_cross_source_correction_refused) ... ok
+test_disagreement_survives_without_supersession (test_reflection_workflow.ReflectionTests.test_disagreement_survives_without_supersession) ... ok
+test_duplicate_ids_rejected (test_reflection_workflow.ReflectionTests.test_duplicate_ids_rejected) ... ok
+test_equal_text_keeps_separate_sources (test_reflection_workflow.ReflectionTests.test_equal_text_keeps_separate_sources) ... ok
+test_exact_observation (test_reflection_workflow.ReflectionTests.test_exact_observation) ... ok
+test_external_container_mutation_cannot_change_claim (test_reflection_workflow.ReflectionTests.test_external_container_mutation_cannot_change_claim) ... ok
+test_inference_cannot_masquerade_as_observation (test_reflection_workflow.ReflectionTests.test_inference_cannot_masquerade_as_observation) ... ok
+test_literal_source_preserved (test_reflection_workflow.ReflectionTests.test_literal_source_preserved) ... ok
+test_malformed_spans_rejected (test_reflection_workflow.ReflectionTests.test_malformed_spans_rejected) ... ok
+test_missing_support_remains_visible (test_reflection_workflow.ReflectionTests.test_missing_support_remains_visible) ... ok
+test_reference_does_not_prove_meaning (test_reflection_workflow.ReflectionTests.test_reference_does_not_prove_meaning) ... ok
+test_response_never_authorizes_execution (test_reflection_workflow.ReflectionTests.test_response_never_authorizes_execution) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK
