@@ -1,0 +1,23 @@
+test_chunk_roundtrip_preserves_literal_ambiguity (test_source_first.SourceFirstTest.test_chunk_roundtrip_preserves_literal_ambiguity) ... ok
+test_failed_fallback_page_is_not_accepted (test_source_first.SourceFirstTest.test_failed_fallback_page_is_not_accepted) ... ok
+test_failed_pdf_text_is_not_indexed_as_success (test_source_first.SourceFirstTest.test_failed_pdf_text_is_not_indexed_as_success) ... ok
+test_fallback_removes_only_terminal_page_separator (test_source_first.SourceFirstTest.test_fallback_removes_only_terminal_page_separator) ... ok
+test_invalid_utf8_is_explicitly_flagged (test_source_first.SourceFirstTest.test_invalid_utf8_is_explicitly_flagged) ... ok
+test_literal_replacement_character_is_not_decode_evidence (test_source_first.SourceFirstTest.test_literal_replacement_character_is_not_decode_evidence) ... FAIL
+test_office_output_has_extraction_method (test_source_first.SourceFirstTest.test_office_output_has_extraction_method) ... ok
+test_successful_unicode_pdf_preserves_text_without_unneeded_ocr (test_source_first.SourceFirstTest.test_successful_unicode_pdf_preserves_text_without_unneeded_ocr) ... ok
+test_unicode_letters_are_not_empty (test_source_first.SourceFirstTest.test_unicode_letters_are_not_empty) ... ok
+
+======================================================================
+FAIL: test_literal_replacement_character_is_not_decode_evidence (test_source_first.SourceFirstTest.test_literal_replacement_character_is_not_decode_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<USER_HOME>\AppData\Local\Temp\kb-source-mutant-x79yqzir\tests\test_source_first.py", line 32, in test_literal_replacement_character_is_not_decode_evidence
+    self.assertEqual(self.con.execute("SELECT COUNT(*) FROM flags WHERE flag='decode_replacement'").fetchone()[0], 0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.012s
+
+FAILED (failures=1)

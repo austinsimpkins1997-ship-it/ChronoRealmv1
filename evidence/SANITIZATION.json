@@ -1,0 +1,80 @@
+[
+  {
+    "path": "evidence/source-first-fix/mutations.json",
+    "original_sha256": "3f87631c76c2f6e334c4d00e42fde8ef6ee858c9a301d99272ccae0af24d1524",
+    "published_sha256": "815a07531bc7be3ecdbe57b170318c77850081a5a00d419643fad5d7514f87ed",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/source-first-fix/ascii-count-mutation.log",
+    "original_sha256": "52a80a031a4b40f2badfc284e9004555701fcf3a04fb33c6e4d878f46497dede",
+    "published_sha256": "bef35fc8394adfd1eb2a6133a8b791f7550ef318b5d15d8e8eee163e0ce47104",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/source-first-fix/pdf-return-code-mutation.log",
+    "original_sha256": "f7b81caf0ff0a1bdb574f83b3d0f56e83967e361773b76206f8cd0d3588902ee",
+    "published_sha256": "8fe7608dd8476ddee3f183d4395f5e2069eb79c8019a8dac29cd1405beb63184",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/source-first-fix/office-label-mutation.log",
+    "original_sha256": "a9f73be2d57015ca09c84d809c153f78d8571e26c398b4cc97674dd8f3c99704",
+    "published_sha256": "bb0b6ef836005e40cac8c33ddc7256d1f8ba4e45eeb75085414f43af18e75574",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/source-first-fix/literal-replacement-mutation.log",
+    "original_sha256": "c2b73960380f339a2571285d63cd1a56b73ae7fd0acc5e8f29812ccf95253804",
+    "published_sha256": "4d13b8e80468a1c0b09435c0a8949935cc790288b978a9acf80780f72a0ae8ab",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/source-first-fix/red.log",
+    "original_sha256": "9bfb0da00c3632e8353816271689442e5b57e125b07d61cff6b7701676bb3a4b",
+    "published_sha256": "0ce35b61367fcde13d9b6acf1f0f55143f462a00c76bfb26cba40ca1df880d36",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/source-first-fix/full-final.log",
+    "original_sha256": "5f908ed955d210b54d5affdd4fdfe00e17c7d85ef3aebc8a6366fa266787698a",
+    "published_sha256": "f9be1edda18765d9c6f260d9569cf202f02a39940bea7484d7b6baf8eecda0c0",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/source-first-fix/complete.diff",
+    "original_sha256": "aee931f8670bfc8cd833e7de6d628d52fbcccb2682f432a41d9d1b4886a62d65",
+    "published_sha256": "9dde61d60b4f86df88ccee0551cde136a2e25d1436bba17c8f4af694980ae01d",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/page-order-fix/mutations.json",
+    "original_sha256": "5c3bb9a6aa2585e9b6ef81207bb8de886481017d1f897e158e3f6f14164110b2",
+    "published_sha256": "88bf6b932c4050448a38adbd4a2262691c7c3b16f8a9308e70258b41b1fe2b15",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/page-order-fix/export-order-mutation.log",
+    "original_sha256": "e43c4fcb5fc1c7597ff7ac6d10e6bc18351def03a0292361055541e81f693487",
+    "published_sha256": "848c69e87b2f0324c86aed2cbda55956779e5317a7889e1df62a272f512f2b34",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/page-order-fix/search-ties-mutation.log",
+    "original_sha256": "06fee0b0a93b42801f8970e1c88a3dd8f32e7383b6a6925050a67919b67b3dea",
+    "published_sha256": "9655c948be9a03ce934fa4c76fba8c9147dec0f914d0d9cd74298fe1bb77a6c8",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/page-order-fix/baseline.log",
+    "original_sha256": "e9005e0e018326b019ddcf9561070e425d20ebacd5f615678c9cd2033ec75b66",
+    "published_sha256": "4614a3f6621465ac39dd06e7b100af01acecf646e84402935341546ca3942230",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  },
+  {
+    "path": "evidence/page-order-fix/patch.diff",
+    "original_sha256": "c2e87f43290075a798e5cd16ac796fcacba1cdba126a9891918a8fa5c3fa5cd4",
+    "published_sha256": "5e000a2cac7a39224e65bb2c9a95b0e7c1c3ec4853576cee4b0f95c188ac5046",
+    "sanitization": "Replaced absolute user-home prefix; normalized UTF-8 text serialization. Original retained privately."
+  }
+]

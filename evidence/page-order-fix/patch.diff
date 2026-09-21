@@ -1,0 +1,20 @@
+--- before/kb.py
++++ after/kb.py
+@@ -871,7 +871,7 @@
+     if a.collection:
+         sql += " AND s.collection=?"
+         params.append(a.collection)
+-    sql += f" ORDER BY bm25({table}) LIMIT ?"
++    sql += f" ORDER BY bm25({table}), s.source_id, u.unit_no, u.unit_id LIMIT ?"
+     params.append(a.limit)
+     try:
+         rows = con.execute(sql, params).fetchall()
+@@ -990,7 +990,7 @@
+     n = 0
+     with open(a.out, "w", encoding="utf-8") as f:
+         for row in con.execute("SELECT u.unit_id, l.label, s.sha256, u.unit_type, u.unit_no, u.method, u.ocr_conf, u.text "
+-                               "FROM units u JOIN sources s ON s.source_id=u.source_id JOIN source_labels l ON l.source_id=u.source_id ORDER BY u.unit_id"):
++                               "FROM units u JOIN sources s ON s.source_id=u.source_id JOIN source_labels l ON l.source_id=u.source_id ORDER BY s.source_id, u.unit_no, u.unit_id"):
+             f.write(json.dumps(dict(zip(("unit_id", "source", "sha256", "unit_type", "unit_no", "method", "ocr_conf", "text"), row)), ensure_ascii=False) + "\n")
+             n += 1
+     print(f"wrote {n} units to {a.out}")

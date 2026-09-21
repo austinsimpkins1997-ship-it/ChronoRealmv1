@@ -1,0 +1,26 @@
+[
+  {
+    "name": "ascii-count",
+    "exit": 1,
+    "assertion_failure": true,
+    "syntax_error": false
+  },
+  {
+    "name": "pdf-return-code",
+    "exit": 1,
+    "assertion_failure": true,
+    "syntax_error": false
+  },
+  {
+    "name": "office-label",
+    "exit": 1,
+    "assertion_failure": true,
+    "syntax_error": false
+  },
+  {
+    "name": "literal-replacement",
+    "exit": 1,
+    "assertion_failure": true,
+    "syntax_error": false
+  }
+]

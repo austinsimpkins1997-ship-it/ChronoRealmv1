@@ -1,0 +1,15 @@
+{
+  "source": "kb-release-1.0.1/source",
+  "source_hashes": {
+    ".gitignore": "a52e6f0f6062cf729aba65748a06e8c6aa1ea0fbaf480b3a8b59d6dba48cc479",
+    "kb.py": "4a9d998099f141676dd30afe82c806c96b99e644aaafd1b2cfb826cfe03a4a2d",
+    "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    ".github/FUNDING.yml": "17fad1df4f9470de9bb62d756b907469a1b4aaa6bccb814241d528eaeb8f667e",
+    "tests/test_kb.py": "9c228755a0ab57469e01ed54b48c4fba4605897f9f59fe622d54fbef10ed6e2c",
+    "tests/test_page_order.py": "53d4db002f41e10b6fe64518b694c44a4f279f7c93c263bf4b7f5e53217d8d39",
+    "tests/test_release_regressions.py": "6c8f72d38acb505cae8f868eae67af049c31e2c549d77a1708ed9c13e9c7aa93",
+    "tests/test_source_first.py": "411989b1dcafe9bef6c4209d92ba604e4346c91a08cf0e0912a399349e410cef"
+  },
+  "changes": "Added packaging documentation and expanded .gitignore only; no source/test/LICENSE changes.",
+  "full_runtime_included": false
+}

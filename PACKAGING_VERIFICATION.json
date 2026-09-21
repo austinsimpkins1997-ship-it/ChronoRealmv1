@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-21",
+  "command": "python -B -m unittest discover -s tests -v",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "working_directory": "ChronoGit",
+  "discovered": 41,
+  "passed": 39,
+  "skipped": 2,
+  "failed": 0,
+  "duration_seconds": 11.379,
+  "scope": "kb component only; no native runtime tests",
+  "source_unchanged": true,
+  "git_remote": null,
+  "published": false,
+  "full_runtime_distribution_license": "UNRESOLVED"
+}

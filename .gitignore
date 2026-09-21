@@ -1,0 +1,21 @@
+knowledge.db
+knowledge.db.building*
+ocr_cache.sqlite
+stage/
+build.log
+validation_report.*
+manifest.json
+*.jsonl
+__pycache__/
+
+# Local/private material
+__pycache__/
+*.pyc
+*.db
+*.db-*
+*.sqlite*
+.env
+.env.*
+*.pem
+*.key
+remote_tokens.json

@@ -1,0 +1,68 @@
+test_chunk_roundtrip_preserves_literal_ambiguity (test_source_first.SourceFirstTest.test_chunk_roundtrip_preserves_literal_ambiguity) ... ok
+test_failed_fallback_page_is_not_accepted (test_source_first.SourceFirstTest.test_failed_fallback_page_is_not_accepted) ... FAIL
+test_failed_pdf_text_is_not_indexed_as_success (test_source_first.SourceFirstTest.test_failed_pdf_text_is_not_indexed_as_success) ... FAIL
+test_invalid_utf8_is_explicitly_flagged (test_source_first.SourceFirstTest.test_invalid_utf8_is_explicitly_flagged) ... ok
+test_literal_replacement_character_is_not_decode_evidence (test_source_first.SourceFirstTest.test_literal_replacement_character_is_not_decode_evidence) ... FAIL
+test_office_output_has_extraction_method (test_source_first.SourceFirstTest.test_office_output_has_extraction_method) ... FAIL
+test_unicode_letters_are_not_empty (test_source_first.SourceFirstTest.test_unicode_letters_are_not_empty) ... FAIL
+
+======================================================================
+FAIL: test_failed_fallback_page_is_not_accepted (test_source_first.SourceFirstTest.test_failed_fallback_page_is_not_accepted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<USER_HOME>\Desktop\kb-release-1.0.1\source\tests\test_source_first.py", line 69, in test_failed_fallback_page_is_not_accepted
+    with self.assertRaisesRegex(RuntimeError, 'pdftotext'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_failed_pdf_text_is_not_indexed_as_success (test_source_first.SourceFirstTest.test_failed_pdf_text_is_not_indexed_as_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<USER_HOME>\Desktop\kb-release-1.0.1\source\tests\test_source_first.py", line 59, in test_failed_pdf_text_is_not_indexed_as_success
+    with self.assertRaisesRegex(RuntimeError, 'pdftotext'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_literal_replacement_character_is_not_decode_evidence (test_source_first.SourceFirstTest.test_literal_replacement_character_is_not_decode_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<USER_HOME>\Desktop\kb-release-1.0.1\source\tests\test_source_first.py", line 32, in test_literal_replacement_character_is_not_decode_evidence
+    self.assertEqual(self.con.execute("SELECT COUNT(*) FROM flags WHERE flag='decode_replacement'").fetchone()[0], 0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_office_output_has_extraction_method (test_source_first.SourceFirstTest.test_office_output_has_extraction_method)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<USER_HOME>\Desktop\kb-release-1.0.1\source\tests\test_source_first.py", line 53, in test_office_output_has_extraction_method
+    self.assertEqual(self.con.execute('SELECT method,text FROM units').fetchone(), ('office-extracted', 'perhaps, not proven'))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: ('text', 'perhaps, not proven') != ('office-extracted', 'perhaps, not proven')
+
+First differing element 0:
+'text'
+'office-extracted'
+
+- ('text', 'perhaps, not proven')
+?   ^
+
++ ('office-extracted', 'perhaps, not proven')
+?   ^^^^^^^   ++++++
+
+
+======================================================================
+FAIL: test_unicode_letters_are_not_empty (test_source_first.SourceFirstTest.test_unicode_letters_are_not_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<USER_HOME>\Desktop\kb-release-1.0.1\source\tests\test_source_first.py", line 23, in test_unicode_letters_are_not_empty
+    self.assertEqual(kb.alnum('κόσμος世界１２'), 10)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 10
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.013s
+
+FAILED (failures=5)

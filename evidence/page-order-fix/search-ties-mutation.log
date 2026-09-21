@@ -1,0 +1,75 @@
+test_equal_relevance_has_source_page_tiebreakers (test_page_order.PageOrderTest.test_equal_relevance_has_source_page_tiebreakers) ... 
+  test_equal_relevance_has_source_page_tiebreakers (test_page_order.PageOrderTest.test_equal_relevance_has_source_page_tiebreakers) (substring=False) ... FAIL
+  test_equal_relevance_has_source_page_tiebreakers (test_page_order.PageOrderTest.test_equal_relevance_has_source_page_tiebreakers) (substring=True) ... FAIL
+test_export_groups_sources_then_numeric_pages (test_page_order.PageOrderTest.test_export_groups_sources_then_numeric_pages) ... ok
+test_relevance_still_precedes_reading_order (test_page_order.PageOrderTest.test_relevance_still_precedes_reading_order) ... ok
+test_s4_rejects_invalid_ordinals_and_accepts_distinct_sources (test_page_order.PageOrderTest.test_s4_rejects_invalid_ordinals_and_accepts_distinct_sources) ... ok
+
+======================================================================
+FAIL: test_equal_relevance_has_source_page_tiebreakers (test_page_order.PageOrderTest.test_equal_relevance_has_source_page_tiebreakers) (substring=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<USER_HOME>\AppData\Local\Temp\kb-order-mutant-bg9mv5xy\tests\test_page_order.py", line 60, in test_equal_relevance_has_source_page_tiebreakers
+    self.assertEqual([s for s in out.splitlines() if s.startswith('[')], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['[2] fixture:2.pdf Â· page 3 Â· synthetic', '[203 chars]tic'] != ['[1] fixture:1.pdf Â· page 1 Â· synthetic', '[203 chars]tic']
+
+First differing element 0:
+'[2] fixture:2.pdf Â· page 3 Â· synthetic'
+'[1] fixture:1.pdf Â· page 1 Â· synthetic'
+
+- ['[2] fixture:2.pdf Â· page 3 Â· synthetic',
+?    ^          ^            ^
+
++ ['[1] fixture:1.pdf Â· page 1 Â· synthetic',
+?    ^          ^            ^
+
+   '[1] fixture:1.pdf Â· page 2 Â· synthetic',
++  '[1] fixture:1.pdf Â· page 3 Â· synthetic',
+   '[2] fixture:2.pdf Â· page 1 Â· synthetic',
+-  '[1] fixture:1.pdf Â· page 3 Â· synthetic',
+-  '[1] fixture:1.pdf Â· page 1 Â· synthetic',
+-  '[2] fixture:2.pdf Â· page 2 Â· synthetic']
+?                                          ^
+
++  '[2] fixture:2.pdf Â· page 2 Â· synthetic',
+?                                          ^
+
++  '[2] fixture:2.pdf Â· page 3 Â· synthetic']
+
+======================================================================
+FAIL: test_equal_relevance_has_source_page_tiebreakers (test_page_order.PageOrderTest.test_equal_relevance_has_source_page_tiebreakers) (substring=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<USER_HOME>\AppData\Local\Temp\kb-order-mutant-bg9mv5xy\tests\test_page_order.py", line 60, in test_equal_relevance_has_source_page_tiebreakers
+    self.assertEqual([s for s in out.splitlines() if s.startswith('[')], expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['[2] fixture:2.pdf Â· page 3 Â· synthetic', '[203 chars]tic'] != ['[1] fixture:1.pdf Â· page 1 Â· synthetic', '[203 chars]tic']
+
+First differing element 0:
+'[2] fixture:2.pdf Â· page 3 Â· synthetic'
+'[1] fixture:1.pdf Â· page 1 Â· synthetic'
+
+- ['[2] fixture:2.pdf Â· page 3 Â· synthetic',
+?    ^          ^            ^
+
++ ['[1] fixture:1.pdf Â· page 1 Â· synthetic',
+?    ^          ^            ^
+
+   '[1] fixture:1.pdf Â· page 2 Â· synthetic',
++  '[1] fixture:1.pdf Â· page 3 Â· synthetic',
+   '[2] fixture:2.pdf Â· page 1 Â· synthetic',
+-  '[1] fixture:1.pdf Â· page 3 Â· synthetic',
+-  '[1] fixture:1.pdf Â· page 1 Â· synthetic',
+-  '[2] fixture:2.pdf Â· page 2 Â· synthetic']
+?                                          ^
+
++  '[2] fixture:2.pdf Â· page 2 Â· synthetic',
+?                                          ^
+
++  '[2] fixture:2.pdf Â· page 3 Â· synthetic']
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.144s
+
+FAILED (failures=2)

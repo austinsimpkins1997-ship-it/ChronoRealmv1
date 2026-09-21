@@ -1,0 +1,46 @@
+test_duplicates_indexed_once_and_linked (test_kb.KbTest.test_duplicates_indexed_once_and_linked) ... ok
+test_every_file_registered_with_a_final_status_and_reason (test_kb.KbTest.test_every_file_registered_with_a_final_status_and_reason) ... ok
+test_failed_build_leaves_previous_database_untouched (test_kb.KbTest.test_failed_build_leaves_previous_database_untouched) ... ok
+test_nested_archives_stop_at_depth_guard (test_kb.KbTest.test_nested_archives_stop_at_depth_guard) ... ok
+test_ocr_reads_image_and_rebuild_uses_cache (test_kb.KbTest.test_ocr_reads_image_and_rebuild_uses_cache) ... skipped 'needs Pillow, tesseract and the DejaVu font'
+test_path_traversal_member_is_flagged_and_never_written_by_name (test_kb.KbTest.test_path_traversal_member_is_flagged_and_never_written_by_name) ... ok
+test_pdf_pages_hash_search_and_markings (test_kb.KbTest.test_pdf_pages_hash_search_and_markings) ... skipped 'needs poppler-utils'
+test_personal_data_patterns_counted_not_copied (test_kb.KbTest.test_personal_data_patterns_counted_not_copied) ... ok
+test_verify_runs_ten_checks_and_passes_clean_build (test_kb.KbTest.test_verify_runs_ten_checks_and_passes_clean_build) ... ok
+test_verify_warns_on_new_and_changed_files (test_kb.KbTest.test_verify_warns_on_new_and_changed_files) ... ok
+test_zip_bomb_guard_refuses_to_expand (test_kb.KbTest.test_zip_bomb_guard_refuses_to_expand) ... ok
+test_equal_relevance_has_source_page_tiebreakers (test_page_order.PageOrderTest.test_equal_relevance_has_source_page_tiebreakers) ... ok
+test_export_groups_sources_then_numeric_pages (test_page_order.PageOrderTest.test_export_groups_sources_then_numeric_pages) ... ok
+test_numeric_order_is_not_lexical_order (test_page_order.PageOrderTest.test_numeric_order_is_not_lexical_order) ... ok
+test_relevance_still_precedes_reading_order (test_page_order.PageOrderTest.test_relevance_still_precedes_reading_order) ... ok
+test_s4_rejects_invalid_ordinals_and_accepts_distinct_sources (test_page_order.PageOrderTest.test_s4_rejects_invalid_ordinals_and_accepts_distinct_sources) ... ok
+test_changed_extraction_does_not_rebind_unit_note (test_release_regressions.ReleaseRegressionTest.test_changed_extraction_does_not_rebind_unit_note) ... ok
+test_changed_source_retains_visible_unresolved_note (test_release_regressions.ReleaseRegressionTest.test_changed_source_retains_visible_unresolved_note) ... ok
+test_commit_failure_preserves_previous_database (test_release_regressions.ReleaseRegressionTest.test_commit_failure_preserves_previous_database) ... ok
+test_default_output_parent_does_not_exclude_docs (test_release_regressions.ReleaseRegressionTest.test_default_output_parent_does_not_exclude_docs) ... ok
+test_empty_root_requires_explicit_choice (test_release_regressions.ReleaseRegressionTest.test_empty_root_requires_explicit_choice) ... ok
+test_existing_writer_lock_blocks_build_and_note (test_release_regressions.ReleaseRegressionTest.test_existing_writer_lock_blocks_build_and_note) ... ok
+test_import_replay_does_not_duplicate_preserved_note (test_release_regressions.ReleaseRegressionTest.test_import_replay_does_not_duplicate_preserved_note) ... ok
+test_legacy_annotation_schema_migrates_on_rebuild (test_release_regressions.ReleaseRegressionTest.test_legacy_annotation_schema_migrates_on_rebuild) ... ok
+test_manifest_is_part_of_database_not_late_side_effect (test_release_regressions.ReleaseRegressionTest.test_manifest_is_part_of_database_not_late_side_effect) ... ok
+test_missing_or_malformed_root_never_replaces_database (test_release_regressions.ReleaseRegressionTest.test_missing_or_malformed_root_never_replaces_database) ... ok
+test_note_invalid_source_or_unit_is_rejected (test_release_regressions.ReleaseRegressionTest.test_note_invalid_source_or_unit_is_rejected) ... ok
+test_notes_survive_new_numeric_source_ids (test_release_regressions.ReleaseRegressionTest.test_notes_survive_new_numeric_source_ids) ... ok
+test_office_extraction_does_not_write_beside_input (test_release_regressions.ReleaseRegressionTest.test_office_extraction_does_not_write_beside_input) ... ok
+test_precise_exclusions_do_not_hide_sibling_prefix (test_release_regressions.ReleaseRegressionTest.test_precise_exclusions_do_not_hide_sibling_prefix) ... ok
+test_s4_rejects_duplicate_and_missing_page_numbers (test_release_regressions.ReleaseRegressionTest.test_s4_rejects_duplicate_and_missing_page_numbers) ... ok
+test_s5_rejects_stale_content_indexes (test_release_regressions.ReleaseRegressionTest.test_s5_rejects_stale_content_indexes) ... ok
+test_chunk_roundtrip_preserves_literal_ambiguity (test_source_first.SourceFirstTest.test_chunk_roundtrip_preserves_literal_ambiguity) ... ok
+test_failed_fallback_page_is_not_accepted (test_source_first.SourceFirstTest.test_failed_fallback_page_is_not_accepted) ... ok
+test_failed_pdf_text_is_not_indexed_as_success (test_source_first.SourceFirstTest.test_failed_pdf_text_is_not_indexed_as_success) ... ok
+test_fallback_removes_only_terminal_page_separator (test_source_first.SourceFirstTest.test_fallback_removes_only_terminal_page_separator) ... ok
+test_invalid_utf8_is_explicitly_flagged (test_source_first.SourceFirstTest.test_invalid_utf8_is_explicitly_flagged) ... ok
+test_literal_replacement_character_is_not_decode_evidence (test_source_first.SourceFirstTest.test_literal_replacement_character_is_not_decode_evidence) ... ok
+test_office_output_has_extraction_method (test_source_first.SourceFirstTest.test_office_output_has_extraction_method) ... ok
+test_successful_unicode_pdf_preserves_text_without_unneeded_ocr (test_source_first.SourceFirstTest.test_successful_unicode_pdf_preserves_text_without_unneeded_ocr) ... ok
+test_unicode_letters_are_not_empty (test_source_first.SourceFirstTest.test_unicode_letters_are_not_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 11.379s
+
+OK (skipped=2)

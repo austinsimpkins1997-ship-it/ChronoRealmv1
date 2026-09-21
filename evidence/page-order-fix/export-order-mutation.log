@@ -1,0 +1,43 @@
+test_equal_relevance_has_source_page_tiebreakers (test_page_order.PageOrderTest.test_equal_relevance_has_source_page_tiebreakers) ... ok
+test_export_groups_sources_then_numeric_pages (test_page_order.PageOrderTest.test_export_groups_sources_then_numeric_pages) ... FAIL
+test_relevance_still_precedes_reading_order (test_page_order.PageOrderTest.test_relevance_still_precedes_reading_order) ... ok
+test_s4_rejects_invalid_ordinals_and_accepts_distinct_sources (test_page_order.PageOrderTest.test_s4_rejects_invalid_ordinals_and_accepts_distinct_sources) ... ok
+
+======================================================================
+FAIL: test_export_groups_sources_then_numeric_pages (test_page_order.PageOrderTest.test_export_groups_sources_then_numeric_pages)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<USER_HOME>\AppData\Local\Temp\kb-order-mutant-pp80htx_\tests\test_page_order.py", line 49, in test_export_groups_sources_then_numeric_pages
+    self.assertEqual([(r['source'], r['unit_no']) for r in rows],
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                     [(f'fixture:{sid}.pdf', n) for sid in (1, 2) for n in (1, 2, 3)])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [('fixture:2.pdf', 3), ('fixture:1.pdf', 2), ('fixtu[75 chars], 2)] != [('fixture:1.pdf', 1), ('fixture:1.pdf', 2), ('fixtu[75 chars], 3)]
+
+First differing element 0:
+('fixture:2.pdf', 3)
+('fixture:1.pdf', 1)
+
+- [('fixture:2.pdf', 3),
+?            ^       ^
+
++ [('fixture:1.pdf', 1),
+?            ^       ^
+
+   ('fixture:1.pdf', 2),
++  ('fixture:1.pdf', 3),
+   ('fixture:2.pdf', 1),
+-  ('fixture:1.pdf', 3),
+-  ('fixture:1.pdf', 1),
+-  ('fixture:2.pdf', 2)]
+?                      ^
+
++  ('fixture:2.pdf', 2),
+?                      ^
+
++  ('fixture:2.pdf', 3)]
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.159s
+
+FAILED (failures=1)

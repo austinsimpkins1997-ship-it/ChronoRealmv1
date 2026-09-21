@@ -1,0 +1,14 @@
+[
+  {
+    "mutation": "export-order",
+    "exit": 1,
+    "assertion_failure": true,
+    "syntax_error": false
+  },
+  {
+    "mutation": "search-ties",
+    "exit": 1,
+    "assertion_failure": true,
+    "syntax_error": false
+  }
+]
